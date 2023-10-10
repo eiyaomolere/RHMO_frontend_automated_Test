@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="15" passed="13" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-09-24T09:22:06Z" name="COM API TEST PRODUCTION" finished-at="2021-09-24T09:25:46Z" duration-ms="219111">
+    <groups>
+    </groups>
+    <test started-at="2021-09-24T09:22:06Z" name="DashBoard Test" finished-at="2021-09-24T09:22:49Z" duration-ms="42594">
+      <class name="DashBoard">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:DashBoard@65b3f4a4]" started-at="2021-09-24T09:22:06Z" name="SetUp" finished-at="2021-09-24T09:22:16Z" duration-ms="9320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method is-config="true" signature="PageObject()[pri:0, instance:DashBoard@65b3f4a4]" started-at="2021-09-24T09:22:16Z" name="PageObject" finished-at="2021-09-24T09:22:16Z" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageObject -->
+        <test-method signature="LandingPageTest()[pri:1, instance:DashBoard@65b3f4a4]" started-at="2021-09-24T09:22:16Z" name="LandingPageTest" finished-at="2021-09-24T09:22:26Z" duration-ms="9772" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LandingPageTest -->
+        <test-method signature="VerifyAllLinks()[pri:2, instance:DashBoard@65b3f4a4]" started-at="2021-09-24T09:22:26Z" name="VerifyAllLinks" finished-at="2021-09-24T09:22:40Z" duration-ms="14598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAllLinks -->
+        <test-method signature="MenuTest()[pri:3, instance:DashBoard@65b3f4a4]" started-at="2021-09-24T09:22:40Z" name="MenuTest" finished-at="2021-09-24T09:22:47Z" duration-ms="6644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MenuTest -->
+        <test-method signature="EnrolleeTest()[pri:4, instance:DashBoard@65b3f4a4]" started-at="2021-09-24T09:22:47Z" name="EnrolleeTest" finished-at="2021-09-24T09:22:49Z" duration-ms="1756" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnrolleeTest -->
+        <test-method signature="AddFamilyMembersTest()[pri:5, instance:DashBoard@65b3f4a4]" started-at="2021-09-24T09:22:49Z" name="AddFamilyMembersTest" finished-at="2021-09-24T09:22:49Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddFamilyMembersTest -->
+        <test-method is-config="true" signature="Quit()[pri:0, instance:DashBoard@65b3f4a4]" started-at="2021-09-24T09:22:49Z" name="Quit" finished-at="2021-09-24T09:22:49Z" duration-ms="362" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Quit -->
+      </class> <!-- DashBoard -->
+    </test> <!-- DashBoard Test -->
+    <test started-at="2021-09-24T09:22:55Z" name="Benefit Test" finished-at="2021-09-24T09:24:46Z" duration-ms="111414">
+      <class name="BenefitTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:BenefitTest@5939a379]" started-at="2021-09-24T09:22:55Z" name="SetUp" finished-at="2021-09-24T09:23:06Z" duration-ms="11262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method is-config="true" signature="PageObject()[pri:0, instance:BenefitTest@5939a379]" started-at="2021-09-24T09:23:06Z" name="PageObject" finished-at="2021-09-24T09:23:06Z" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageObject -->
+        <test-method signature="LandingPageTest()[pri:1, instance:BenefitTest@5939a379]" started-at="2021-09-24T09:23:06Z" name="LandingPageTest" finished-at="2021-09-24T09:23:16Z" duration-ms="9677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LandingPageTest -->
+        <test-method signature="VerifyAllLinks()[pri:2, instance:BenefitTest@5939a379]" started-at="2021-09-24T09:23:16Z" name="VerifyAllLinks" finished-at="2021-09-24T09:23:39Z" duration-ms="23186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAllLinks -->
+        <test-method signature="SearchBenefitPositiveTest()[pri:3, instance:BenefitTest@5939a379]" started-at="2021-09-24T09:23:39Z" name="SearchBenefitPositiveTest" finished-at="2021-09-24T09:23:44Z" duration-ms="5065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchBenefitPositiveTest -->
+        <test-method signature="SearchBenefitNegativeTest()[pri:4, instance:BenefitTest@5939a379]" started-at="2021-09-24T09:23:44Z" name="SearchBenefitNegativeTest" finished-at="2021-09-24T09:24:06Z" duration-ms="21948" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at BenefitTest.SearchBenefitNegativeTest(BenefitTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchBenefitNegativeTest -->
+        <test-method signature="SearchBenefitNegativeTest()[pri:4, instance:BenefitTest@5939a379]" started-at="2021-09-24T09:24:12Z" name="SearchBenefitNegativeTest" finished-at="2021-09-24T09:24:43Z" duration-ms="31412" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertTrue(Assert.java:44)
+at org.testng.Assert.assertTrue(Assert.java:54)
+at BenefitTest.SearchBenefitNegativeTest(BenefitTest.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchBenefitNegativeTest -->
+        <test-method signature="AccessSecondaryCareTest()[pri:5, instance:BenefitTest@5939a379]" started-at="2021-09-24T09:24:44Z" name="AccessSecondaryCareTest" finished-at="2021-09-24T09:24:46Z" duration-ms="2012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AccessSecondaryCareTest -->
+        <test-method is-config="true" signature="Quit()[pri:0, instance:BenefitTest@5939a379]" started-at="2021-09-24T09:24:46Z" name="Quit" finished-at="2021-09-24T09:24:46Z" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Quit -->
+      </class> <!-- BenefitTest -->
+    </test> <!-- Benefit Test -->
+    <test started-at="2021-09-24T09:24:51Z" name="My Hospital" finished-at="2021-09-24T09:25:46Z" duration-ms="54168">
+      <class name="MyHospitalTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:MyHospitalTest@29647f75]" started-at="2021-09-24T09:24:51Z" name="SetUp" finished-at="2021-09-24T09:25:03Z" duration-ms="12026" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method is-config="true" signature="PageObject()[pri:0, instance:MyHospitalTest@29647f75]" started-at="2021-09-24T09:25:03Z" name="PageObject" finished-at="2021-09-24T09:25:03Z" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PageObject -->
+        <test-method signature="LandingPageTest()[pri:1, instance:MyHospitalTest@29647f75]" started-at="2021-09-24T09:25:03Z" name="LandingPageTest" finished-at="2021-09-24T09:25:16Z" duration-ms="12172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LandingPageTest -->
+        <test-method signature="VerifyAllLinks()[pri:2, instance:MyHospitalTest@29647f75]" started-at="2021-09-24T09:25:16Z" name="VerifyAllLinks" finished-at="2021-09-24T09:25:35Z" duration-ms="19398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAllLinks -->
+        <test-method signature="SearchHospitalPositiveTest()[pri:3, instance:MyHospitalTest@29647f75]" started-at="2021-09-24T09:25:35Z" name="SearchHospitalPositiveTest" finished-at="2021-09-24T09:25:41Z" duration-ms="5973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchHospitalPositiveTest -->
+        <test-method signature="SearchHospitalNegativeTest()[pri:4, instance:MyHospitalTest@29647f75]" started-at="2021-09-24T09:25:41Z" name="SearchHospitalNegativeTest" finished-at="2021-09-24T09:25:45Z" duration-ms="4251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchHospitalNegativeTest -->
+        <test-method is-config="true" signature="Quit()[pri:0, instance:MyHospitalTest@29647f75]" started-at="2021-09-24T09:25:45Z" name="Quit" finished-at="2021-09-24T09:25:46Z" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Quit -->
+      </class> <!-- MyHospitalTest -->
+    </test> <!-- My Hospital -->
+  </suite> <!-- COM API TEST PRODUCTION -->
+</testng-results>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="COM API TEST PRODUCTION">
+    <listeners>
+        <listener class-name="Listeners.ExtentReport"/>
+        <listener class-name="Listeners.RetryListener"/>
+    </listeners>
+
+    <test name="DashBoard Test" verbose="10">
+        <classes>
+        </classes>
+    </test>
+
+    <test name="Benefit Test" verbose="10">
+        <classes>
+            <class name="BenefitTest"/>
+        </classes>
+    </test>
+
+    <test name="My Hospital" verbose="10">
+        <classes>
+            <class name="MyHospitalTest"/>
+        </classes>
+    </test>
+
+</suite>

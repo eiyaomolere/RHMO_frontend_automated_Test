@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [COM API TEST PRODUCTION]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Listeners.ExtentReport"/>
+    <listener class-name="Listeners.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Benefit Test(failed)" verbose="0">
+    <classes>
+      <class name="BenefitTest">
+        <methods>
+          <include name="Quit"/>
+          <include name="PageObject"/>
+          <include name="SearchBenefitNegativeTest"/>
+          <include name="SetUp"/>
+        </methods>
+      </class> <!-- BenefitTest -->
+    </classes>
+  </test> <!-- Benefit Test(failed) -->
+</suite> <!-- Failed suite [COM API TEST PRODUCTION] -->
