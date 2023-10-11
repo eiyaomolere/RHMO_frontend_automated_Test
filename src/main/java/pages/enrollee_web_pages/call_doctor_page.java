@@ -11,6 +11,7 @@ import utility.JavaScriptUtil;
 
 import java.io.IOException;
 
+import static utility.ActionClassUtil.DoActionSendKeys;
 import static utility.JavaScriptUtil.CheckElementPresent;
 import static utility.JavaScriptUtil.DoScrollIntoView;
 import static utility.Utility.fetchvalue;
