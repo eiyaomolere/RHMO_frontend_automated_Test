@@ -60,9 +60,6 @@ public abstract class TestBase_admin_portal {
         getdriver.get().manage().window().maximize();
 
         getdriver.get().get(fetchvalue("admin_url"));
-
-        getdriver.get().manage().window().fullscreen();
-
         getdriver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Long.parseLong(fetchvalue("PageLoad.wait"))));
         getdriver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(fetchvalue("implicit.wait"))));
 
