@@ -95,6 +95,7 @@ public class userProfile_webElement {
         (profileDropdown).click();
         (profile).click();
 
+
         //Generate random admin name
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         Random random = new Random();
