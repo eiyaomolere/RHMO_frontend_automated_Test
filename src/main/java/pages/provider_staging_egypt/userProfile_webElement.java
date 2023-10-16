@@ -111,7 +111,6 @@ public class userProfile_webElement {
         (updateButton).click();
         javaScriptUtil.waitForPageLoad();
     }
-
     public void validate_update() throws IOException, InterruptedException {
 
         String validMessage =(successUpdateAlert).getText();
