@@ -1,11 +1,13 @@
 package Base;
 
-import Listeners.ExtentReport;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import utility.DB_Operations;
 import utility.OptionsManager;
 import utility.testrail.TestRailHandler;
@@ -13,9 +15,10 @@ import utility.testrail.TestRailHandler;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+
 import static utility.Utility.fetchvalue;
 
-public abstract class TestBase_admin_portal {
+public class TestBase_admin_portal_egypt {
 
     public TestRailHandler trh;
 
@@ -69,7 +72,7 @@ public abstract class TestBase_admin_portal {
 
         getdriver.get().manage().window().maximize();
 
-        getdriver.get().get(fetchvalue("admin_url"));
+        getdriver.get().get(fetchvalue("admin_portal_staging_egypt"));
         getdriver.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(Long.parseLong(fetchvalue("PageLoad.wait"))));
         getdriver.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(fetchvalue("implicit.wait"))));
 

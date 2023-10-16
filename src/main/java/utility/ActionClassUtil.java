@@ -1,6 +1,5 @@
 package utility;
 
-import Base.TestBase_admin_portal;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +21,7 @@ public class ActionClassUtil  {
         action.moveToElement(locator).sendKeys(value).build().perform();
     }
 
-    public static void DoActionSendKeys(WebElement locator) {
+    public static void DoActionSendKeys_fakeName(WebElement locator) {
         Actions action = new Actions(driver);
         Faker faker= new Faker();
         action.sendKeys(locator, faker.name().firstName()).perform();

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Provider Admin Portal Regression Test">
+
+    <test name="create Provider admin" verbose="10">
+        <classes>
+            <class name="provider_staging.createProviderAdmin"/>
+        </classes>
+    </test>
+
+    <test name="landing page Test" verbose="10">
+        <classes>
+            <class name="provider_staging.landingPage"/>
+        </classes>
+    </test>
+
+    <test name="localization Test" verbose="10">
+        <classes>
+            <class name="provider_staging.localization"/>
+        </classes>
+    </test>
+
+    <test name="password_validation Test" verbose="10">
+        <classes>
+            <class name="provider_staging.passwordValidation"/>
+        </classes>
+    </test>
+
+    <test name="Users Profile Test" verbose="10">
+        <classes>
+            <class name="provider_staging.userProfile"/>
+        </classes>
+    </test>
+
+</suite>

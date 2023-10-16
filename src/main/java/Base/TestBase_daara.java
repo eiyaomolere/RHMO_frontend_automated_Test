@@ -6,9 +6,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import utility.DB_Operations;
 import utility.OptionsManager;
+import utility.testrail.TestRailHandler;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -17,6 +19,15 @@ import java.time.Duration;
 import static utility.Utility.fetchvalue;
 
 public class TestBase_daara {
+
+    public TestRailHandler trh;
+
+    String testrailusername = System.getenv("TESTRAIL_USERNAME") != null ? System.getenv("TESTRAIL_USERNAME")
+            : fetchvalue("TESTRAIL_USERNAME");
+    String testrailpassword = System.getenv("TESTRAIL_PASSWORD") != null ? System.getenv("TESTRAIL_PASSWORD")
+            : fetchvalue("TESTRAIL_PASSWORD");
+    String testrailurl = System.getenv("TESTRAIL_URL") != null ? System.getenv("TESTRAIL_URL")
+            : fetchvalue("TESTRAIL_URL");
     public static DB_Operations d;
 
     public OptionsManager optionsManager;
@@ -73,6 +84,17 @@ public class TestBase_daara {
             if (getdriver.get() != null)
                 getdriver.get().quit();
         } catch (Exception ignored) {
+        }
+    }
+
+    @BeforeSuite(alwaysRun = true)
+    public void LinkTestrail() {
+        {
+            try {
+                trh = new TestRailHandler(testrailusername, testrailpassword, testrailurl);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
         }
     }
 }

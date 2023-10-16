@@ -2,8 +2,10 @@ package utility;
 
 import Base.TestBase_admin_portal;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.FluentWait;
 
 import java.io.IOException;
+import java.time.Duration;
 
 public class JavaScriptUtil{
 
@@ -90,5 +92,19 @@ public class JavaScriptUtil{
         js.executeScript("arguments[0].type = arguments[1]", locator, "text");
         locator.clear();
         locator.sendKeys(Date);
+    }
+
+    public void waitForPageLoad() {
+        try {
+            FluentWait wait = new FluentWait(driver).withTimeout(Duration.ofSeconds(25))
+                    .pollingEvery(Duration.ofSeconds(3)).ignoring(java.util.NoSuchElementException.class);
+            wait.until(driver -> {
+                System.out.println("Current Window State  : " + ((JavascriptExecutor) driver).executeScript("return document.readyState"));
+                return String.valueOf(((JavascriptExecutor) driver).executeScript("return document.readyState"))
+                        .equals("complete");
+            });
+        } catch (Exception e) {
+            System.out.println("Exception in method - | waitForPageLoad | " + e.getMessage());
+        }
     }
 }
