@@ -15,7 +15,7 @@ import java.net.URL;
 import java.time.Duration;
 import static utility.Utility.fetchvalue;
 
-public abstract class TestBase_admin_portal {
+public class TestBase_admin_portal {
 
     public TestRailHandler trh;
 

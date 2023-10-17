@@ -11,7 +11,6 @@ import org.testng.annotations.BeforeTest;
 import utility.DB_Operations;
 import utility.OptionsManager;
 import utility.testrail.TestRailHandler;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
