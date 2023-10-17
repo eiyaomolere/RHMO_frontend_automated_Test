@@ -56,6 +56,7 @@ public class TestBase_daara {
                 }
                 break;
 
+
             case "Firefox":
                 getdriver.set(new FirefoxDriver(optionsManager.getFirefoxOptions()));
                 break;
